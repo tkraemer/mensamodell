@@ -1,0 +1,45 @@
+
+# Entities and attributes
+enum type --class ~.domain.mensa.Ausstattung
+	enum constant --name bio
+	enum constant --name vegan
+	enum constant --name frontcooked
+	
+enum type --class ~.domain.nutzer.Rolle
+	enum constant --name Student
+	enum constant --name Gast
+	enum constant --name Mitarbeiter
+	
+
+entity jpa --class ~.domain.mensa.Mensa  --sequenceName MENSA_SEQ
+	field other --fieldName wochenplaene --type Woche  --notNull
+	field string --fieldName standort --notNull
+	field number --fieldName siztplaetze --type java.lang.Integer --primitive --notNull
+	
+entity jpa --class ~.domain.mensa.Speise  --sequenceName SPEISE_SEQ
+	field enum --fieldName ausstattung --type ~.domain.Ausstattung
+	field string --fieldName Myname --notNull
+	field other --fieldName zutaten --type Zutaten  --notNull
+	
+entity jpa --class ~.domain.mensa.Woche  --sequenceName WOCHE_SEQ
+	field string --fieldName Myname --notNull
+	
+entity jpa --class ~.domain.mensa.Zutaten  --sequenceName ZUTATEN_SEQ
+	
+entity jpa --class ~.domain.nutzer.Person  --sequenceName PERSON_SEQ
+	field enum --fieldName rolle --type ~.domain.Rolle --notNull
+	field string --fieldName Myname --notNull
+	
+
+
+# Start of user code for entities and atributes
+
+# End of user code
+
+# References (relations between entities)
+
+
+# Start of user code for references
+
+# End of user code for references
+

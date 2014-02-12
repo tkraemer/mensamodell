@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_leckermensa_domain_mensa_Speise" modelAttribute="speise" path="/speises" render="${empty dependencies}" z="1SpH0WOu7MpgTmFpfkNuMYVq+ZE=">
+        <field:input field="ausstattung" id="c_leckermensa_domain_mensa_Speise_ausstattung" z="EFlvHDZZr4jmJAUh5y61EuVjCcM="/>
+        <field:input field="Myname" id="c_leckermensa_domain_mensa_Speise_Myname" required="true" z="EbDxSCF7y9o3O+pPyuGFQA3IG+g="/>
+        <field:input field="zutaten" id="c_leckermensa_domain_mensa_Speise_zutaten" required="true" z="XhicdC091i9c+N8Hj1RkOk4lPX8="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_leckermensa_domain_mensa_Speise" render="${not empty dependencies}" z="dwlATxCdd+FjChwRaG3en1bXzW0="/>
+</div>

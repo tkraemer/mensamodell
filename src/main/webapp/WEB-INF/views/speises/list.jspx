@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_leckermensa_domain_mensa_Speise" items="${speises}" z="nfEQEUWna9Nz7em9q34Brv08a/I=">
+        <table:table data="${speises}" id="l_leckermensa_domain_mensa_Speise" path="/speises" z="xZTyGIwP2tJ07Tv0271tUfq76WE=">
+            <table:column id="c_leckermensa_domain_mensa_Speise_ausstattung" property="ausstattung" z="DskhNG5UDGw34ct0DiBMY2YaZ6M="/>
+            <table:column id="c_leckermensa_domain_mensa_Speise_Myname" property="myname" z="3K+Y/ipkLA+xJEQI6taUVsIR8As="/>
+            <table:column id="c_leckermensa_domain_mensa_Speise_zutaten" property="zutaten" z="O7TQWOUoiLYIazhvl7VD5gfHSUg="/>
+        </table:table>
+    </page:list>
+</div>

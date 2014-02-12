@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_person" z="Cz66KzcF6GdyygpbYfiE+EkFFFA=">
+            <menu:item id="i_person_new" messageCode="global_menu_new" url="/people?form" z="IlD8NFD64X8egaRrgHbQeWKT68I="/>
+            <menu:item id="i_person_list" messageCode="global_menu_list" url="/people?page=1&amp;size=${empty param.size ? 10 : param.size}" z="MFjeqYeiMgVzk2P/OWfFpXZhhS4="/>
+        </menu:category>
+        <menu:category id="c_speise" z="56HmaOtjdS44zIyoiRihxYcKtp8=">
+            <menu:item id="i_speise_new" messageCode="global_menu_new" url="/speises?form" z="O+/f7t9wDfw/l8/1/S2NQocrAJs="/>
+            <menu:item id="i_speise_list" messageCode="global_menu_list" url="/speises?page=1&amp;size=${empty param.size ? 10 : param.size}" z="c+PKf1pRnZeT5hH2kicGdnIVIdY="/>
+        </menu:category>
+        <menu:category id="c_woche" z="6r5X6ChZpuKzp9H0SPdvFRLZl1U=">
+            <menu:item id="i_woche_new" messageCode="global_menu_new" url="/woches?form" z="RcHxka4LT9qydxdl1gqvD0D2GGk="/>
+            <menu:item id="i_woche_list" messageCode="global_menu_list" url="/woches?page=1&amp;size=${empty param.size ? 10 : param.size}" z="s1+ku8+eoysyxBteSKY7a+amgQA="/>
+        </menu:category>
+        <menu:category id="c_mensa" z="KpcG+yCrYrxjf8AXOPxy8Ory5sE=">
+            <menu:item id="i_mensa_new" messageCode="global_menu_new" url="/mensas?form" z="6ppdnYF9uBQe7FV9Gt2JmzAVAW4="/>
+            <menu:item id="i_mensa_list" messageCode="global_menu_list" url="/mensas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="RBLZ2OJIskPvXSC/PDGDT5fmZRE="/>
+        </menu:category>
+    </menu:menu>
+</div>

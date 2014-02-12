@@ -1,0 +1,41 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2014-02-12 13:42:14
+project --topLevelPackage leckerMensa --projectName leckerMensa
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+logging setup --level INFO
+// script --file setup.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2014-02-12 13:42:17
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2014-02-12 13:42:19
+enum type --class ~.domain.mensa.Ausstattung
+ enum constant --name bio
+ enum constant --name vegan
+ enum constant --name frontcooked
+enum type --class ~.domain.nutzer.Rolle
+ enum constant --name Student
+ enum constant --name Gast
+ enum constant --name Mitarbeiter
+entity jpa --class ~.domain.mensa.Mensa  --sequenceName MENSA_SEQ
+ field other --fieldName wochenplaene --type Woche  --notNull
+ field string --fieldName standort --notNull
+ field number --fieldName siztplaetze --type java.lang.Integer --primitive --notNull
+entity jpa --class ~.domain.mensa.Speise  --sequenceName SPEISE_SEQ
+ field enum --fieldName ausstattung --type ~.domain.Ausstattung
+ field string --fieldName Myname --notNull
+ field other --fieldName zutaten --type Zutaten  --notNull
+entity jpa --class ~.domain.mensa.Woche  --sequenceName WOCHE_SEQ
+ field string --fieldName Myname --notNull
+entity jpa --class ~.domain.mensa.Zutaten  --sequenceName ZUTATEN_SEQ
+entity jpa --class ~.domain.nutzer.Person  --sequenceName PERSON_SEQ
+ field enum --fieldName rolle --type ~.domain.Rolle --notNull
+ field string --fieldName Myname --notNull
+// script --file entities.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2014-02-12 13:42:22
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2014-02-12 13:42:24
+web mvc setup
+web mvc all --package ~.web
+web mvc finder all
+web mvc language --code en
+// script --file webmvc.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2014-02-12 13:42:29

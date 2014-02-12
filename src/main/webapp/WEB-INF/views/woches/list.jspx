@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_leckermensa_domain_mensa_Woche" items="${woches}" z="1RksFJw1SRH43fKZArWlDbUiXYc=">
+        <table:table data="${woches}" id="l_leckermensa_domain_mensa_Woche" path="/woches" z="9ZJvBg8cF5mvpv2nmVYPioQ6tQ0=">
+            <table:column id="c_leckermensa_domain_mensa_Woche_Myname" property="myname" z="C8CGWbBVyhGwefdluGQm/dIfc6A="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_leckermensa_domain_mensa_Speise" object="${speise}" path="/speises" z="NSsxPTs2yjhX4UI2S4+NUoDmSnU=">
+        <field:display field="ausstattung" id="s_leckermensa_domain_mensa_Speise_ausstattung" object="${speise}" z="BuribUqLnAXQrcArQdJk+K6KJ8k="/>
+        <field:display field="myname" id="s_leckermensa_domain_mensa_Speise_Myname" object="${speise}" z="WUfnpInkjSzLDAJIXIimAuZVAFQ="/>
+        <field:display field="zutaten" id="s_leckermensa_domain_mensa_Speise_zutaten" object="${speise}" z="ez3AYuNzZsuYbwwH9wMNCD62iEM="/>
+    </page:show>
+</div>
